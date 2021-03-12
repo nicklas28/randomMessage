@@ -4,7 +4,7 @@ function generateRandomNumber(num) {
   }
   
   const collectiveWisdom = {
-    signInfo: ['star', 'moon', 'sun', 'comet'],
+    signInfo: ['star', 'moon', 'sun', 'comet', "jupiter", "saturn"],
     fortuneOutput: ['terrible luck', 'bad luck', 'ok luck', 'good luck', 'great luck'],
     advice: ['go out and eat', 'not read this', 'play more', 'trust no one']
   }
@@ -34,6 +34,7 @@ function generateRandomNumber(num) {
   
   function formatWisdom(wisdom) {
     // Add some ASCII here?
+    personalWisdom.push("\n\uD83D\uDE00\n")
     // Add in more symbols to the array? like emojies or what not?
     const formatted = personalWisdom.join('\n')
     console.log(formatted)
